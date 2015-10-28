@@ -16,28 +16,23 @@ Content strategy will be a challenge. It will be interesting coming up with cont
 Primarily new and up-and-coming designers and developers.
 
 ## Project Requirements
-### Required Research Elements
 - 3+ types of design research
 - User Flows (not included in 3 types of design research)
 
-### Required Conceptual Elements
 - 4+ Responsive sketches with 2+ breakpoints each (mobile plus 2 more Media Queries)
 - 3+ Style Tiles including written concepts on each one (1 - 2 paragraphs)
 - Wireframes for 2 pages (in 2 sizes)
 - Mockups for 2 pages (in 2 sizes)
 
-### Required Technical Elements
 - 4+ HTML, 1+ compiled CSS file (with Sass)
 - Reset CSS coding (Reset.css or Normalize.css)
 - Responsive Site with 3+ views
 - One or more JS- or jQuery-dependent plugins (or hand written code) that adds to the user experience of the site
 - All work including sketches, wireframes, etc, are uploaded to GitHub and GH-pages, and each repo is named well and includes a readme file
 
-### Required Design Elements
 - Icon set of 3–5 icons custom designed for project
 - A coded Style Guide (HTML and CSS) that includes the typography, the colors, buttons, icons, and other documentation for the design
 
-### Required Deliverables
 - Final Website or Web App
 - A write-up of the concept and process up to 400 words, as a README.md on GitHub along with a live github.io project
 - Final 5-minute Presentation
