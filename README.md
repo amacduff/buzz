@@ -1,5 +1,10 @@
 # Cafe Lotto
-Final project for UI Design at The Iron Yard Austin
+A web app connecting respected members of the design/tech community with people who look up to them.
+
+## History & Intro
+Austin is a tech city. There are many conferences to attend, and many respected minds travel there to speak. If you're bold enough, you might be able to meet someone you look up to. That can be challenging, though. Not everyone is outgoing, and even extroverts can have a hard time getting to someone they would like to meet.
+
+On the other side of it, many speakers would like to meet people who want to meet them, but there are challenges 
 
 ## SWOT Analysis
 
@@ -20,6 +25,8 @@ Final project for UI Design at The Iron Yard Austin
 ### Threats
 - Conferences could start organizing meetings like this as part of their schedule, eliminating the need for this app
 - Speakers might decide something like this is too much to handle
+
+## Contact Me
 
 Questions? Comments? [Email me](mailto:alex@alexmacduff.com?subject=Hello!).
 
