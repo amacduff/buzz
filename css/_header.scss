@@ -1,0 +1,67 @@
+/* Header */
+
+.topbar {
+	overflow: hidden;
+}
+
+.logo {
+	float: left;
+	font: {
+		family: $font-heading;
+		@include fntz(1.5);
+	}
+	padding: 0.65rem 1.5rem;
+}
+
+.nav-link {
+	float: right;
+	padding: 1rem 1.5rem;
+}
+
+.nav.small {
+	background-color: $color-highlight;
+	display: none;
+
+	ul {
+
+		li {
+			border-bottom: 2px solid $color-tertiary;
+			padding: 1rem;
+			text-align: center;
+		}
+
+	}
+
+}
+
+.nav.large {
+	display: none;
+	float: right;
+
+	ul {
+
+		li {
+			display: inline;
+			padding-right: 1rem;
+		}
+
+	}
+
+}
+
+.tagline {
+	color: $color-primary;
+	margin: 6rem auto;
+	text-align: center;
+
+	p {
+		line-height: 1.25em;
+
+		span {
+			color: $color-secondary;
+		}
+
+	}
+
+}
+

@@ -1,0 +1,9 @@
+/* Headings */
+
+h1 {
+	font: {
+		family: $font-heading;
+		@include fntz(2);
+	}
+}
+

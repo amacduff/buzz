@@ -1,0 +1,31 @@
+/* Variables */
+
+// Colors
+
+$color-primary: #194B8D;
+$color-secondary: #4AB7DA;
+$color-tertiary: #F1F8F7;
+$color-accent: #03A602;
+$color-highlight: #FFFFFF;
+$color-text: #222222;
+
+
+// Typography
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic);
+
+@font-face {
+    font-family: 'Wisdom Script';
+    src: url('../fonts/wisdom_script_aj-webfont.eot');
+    src: url('../fonts/wisdom_script_aj-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wisdom_script_aj-webfont.woff2') format('woff2'),
+         url('../fonts/wisdom_script_aj-webfont.woff') format('woff'),
+         url('../fonts/wisdom_script_aj-webfont.ttf') format('truetype'),
+         url('../fonts/wisdom_script_aj-webfont.svg#wisdom_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-heading: 'Wisdom Script', script;
+$font-text: 'Lato', sans-serif;
+

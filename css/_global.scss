@@ -1,0 +1,21 @@
+/* Global Styles */
+
+body {
+	background-color: $color-tertiary;
+	color: $color-text;
+	font: {
+		family: $font-text;
+		@include fntz(1.1);
+		weight: 400;
+	}
+}
+
+p {
+	line-height: 1.6em;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+}
+

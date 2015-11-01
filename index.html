@@ -5,7 +5,8 @@
 
 		<meta charset="utf-8">
 		<title>Buzz</title>
-		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	</head>
@@ -14,20 +15,38 @@
 
 		<header>
 
-			<div class="logo">
-				<p><a href="#">Buzz</a></p>
+			<div class="topbar">
+
+				<div class="logo">
+					<p><a href="#">Buzz</a></p>
+				</div>
+
+				<nav class="nav large">
+					<ul>
+						<li><a href="#">Search</a></li>
+						<li><a href="#">Stories</a></li>
+						<li><a href="#">Community</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</nav>
+
+				<div class="nav-link">
+					<a href="#" id="nav-toggle"><i class="fa fa-bars"></i></a>
+				</div>
+
 			</div>
 
-			<nav>
+			<nav class="nav small">
 				<ul>
 					<li><a href="#">Search</a></li>
 					<li><a href="#">Stories</a></li>
 					<li><a href="#">Community</a></li>
 					<li><a href="#">About</a></li>
+				</ul>
 			</nav>
 
 			<div class="tagline">
-				<p>Meet a design leader</p>
+				<p id="fittext1">Meet a <br/><span>design</span> leader.</p>
 			</div>
 
 		</header>
@@ -60,6 +79,8 @@
 
 			<section class="featured-stories">
 
+				<h1>Featured Stories</h1>
+
 				<article>
 					<h2>Erin Kissane and I have a secret handshake</h2>
 					<p><em>by</em> Simone Astor</p>
@@ -84,6 +105,14 @@
 			<p>© 2015 Buzz | Made in ATX</p>
 
 		</footer>
+
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script type="text/javascript">
+			$("#fittext1").fitText();
+			$("#fittext2").fitText(1.2);
+			$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+		</script>
 
 	</body>
 
