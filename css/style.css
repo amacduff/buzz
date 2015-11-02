@@ -223,4 +223,16 @@ main {
   font-weight: 300;
 }
 
+/* Footer */
+footer {
+  background-color: #63BC5E;
+  color: #FFFFFF;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  margin: 0 auto;
+  width: 90%;
+}
+
 /*# sourceMappingURL=style.css.map */
