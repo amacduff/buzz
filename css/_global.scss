@@ -20,3 +20,11 @@ a {
 	text-decoration: none;
 }
 
+::-moz-selection {
+  background-color: $color-tertiary;
+}
+
+::selection {
+  background-color: $color-tertiary;
+}
+

@@ -82,6 +82,14 @@ a {
   text-decoration: none;
 }
 
+::-moz-selection {
+  background-color: #F1F8F7;
+}
+
+::selection {
+  background-color: #F1F8F7;
+}
+
 /* Headings */
 h1 {
   background-color: #4AB7DA;
@@ -91,8 +99,8 @@ h1 {
   font-family: "Wisdom Script", script;
   font-size: 32px;
   font-size: 2rem;
-  margin-left: -20%;
-  padding: 1rem 2rem 1.25rem 20%;
+  margin-left: -5rem;
+  padding: 1rem 2rem 1.25rem 6.5rem;
 }
 
 /* Header */
@@ -148,7 +156,29 @@ h1 {
 /* Sections */
 main {
   margin: 0 auto;
-  width: 90%;
+}
+
+.leader {
+  background-color: #FFFFFF;
+  margin: 5rem auto;
+  padding: 1.5rem;
+}
+.leader .name {
+  color: #194B8D;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.leader .title {
+  font-size: 21.6px;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 300;
+}
+.leader .date {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

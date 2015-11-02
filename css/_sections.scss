@@ -2,6 +2,35 @@
 
 main {
 	margin: 0 auto;
-	width: 90%;
+}
+
+.leader {
+	background-color: $color-highlight;
+	margin: 5rem auto;
+	padding: 1.5rem;
+
+	.name {
+		color: $color-primary;
+		font: {
+			@include fntz(1.5);
+			weight: 700;
+		}
+	}
+
+	.title {
+		font: {
+			@include fntz(1.35);
+			style: italic;
+			weight: 300;
+		}
+	}
+
+	.date {
+		font: {
+			@include fntz(1.25);
+			weight: 700;
+		}
+	}
+
 }
 
