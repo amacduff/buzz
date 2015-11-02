@@ -80,6 +80,7 @@ p {
 a {
   color: #194B8D;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 ::-moz-selection {
@@ -99,13 +100,15 @@ h1 {
   font-family: "Wisdom Script", script;
   font-size: 32px;
   font-size: 2rem;
-  margin-left: -5rem;
-  padding: 1rem 2rem 1.25rem 6.5rem;
+  margin-left: -10%;
+  padding: 1rem 2rem 1.25rem 15%;
 }
 
 /* Header */
 .topbar {
+  margin: 0 auto;
   overflow: hidden;
+  width: 90%;
 }
 
 .logo {
@@ -113,12 +116,12 @@ h1 {
   font-family: "Wisdom Script", script;
   font-size: 24px;
   font-size: 1.5rem;
-  padding: 0.65rem 1.5rem;
+  padding: 0.65rem 0;
 }
 
 .nav-link {
   float: right;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
 }
 
 .nav.small {
@@ -143,10 +146,12 @@ h1 {
 .tagline {
   color: #194B8D;
   font-family: "Wisdom Script", script;
-  margin: 6rem auto;
+  margin: 6rem auto 8rem auto;
   text-align: center;
 }
 .tagline p {
+  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.25em;
 }
 .tagline p span {
@@ -161,7 +166,7 @@ main {
 .leader {
   background-color: #FFFFFF;
   margin: 5rem auto;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 5%;
 }
 .leader .name {
   color: #194B8D;
@@ -178,7 +183,44 @@ main {
 .leader .date {
   font-size: 20px;
   font-size: 1.25rem;
+}
+.leader .details-link a {
+  border: 2px solid #63BC5E;
+  color: #63BC5E;
+  display: inline-block;
   font-weight: 700;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+.leader .details-link a:hover {
+  background-color: #63BC5E;
+  color: #FFFFFF;
+}
+
+.story-link {
+  border-bottom: 2px solid #FFFFFF;
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+  width: 90%;
+}
+.story-link:nth-child(2) {
+  margin-top: 4rem;
+}
+.story-link:last-child {
+  border-bottom: 0;
+}
+.story-link h2 {
+  color: #194B8D;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.story-link p {
+  margin-top: 0.5rem;
+}
+.story-link span {
+  font-style: italic;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

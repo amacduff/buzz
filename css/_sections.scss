@@ -4,10 +4,13 @@ main {
 	margin: 0 auto;
 }
 
+
+// Upcoming Leaders
+
 .leader {
 	background-color: $color-highlight;
 	margin: 5rem auto;
-	padding: 1.5rem;
+	padding: 1.5rem 1.5rem 1.5rem 5%;
 
 	.name {
 		color: $color-primary;
@@ -28,7 +31,65 @@ main {
 	.date {
 		font: {
 			@include fntz(1.25);
+		}
+	}
+
+	.details-link {
+
+		a {
+			border: 2px solid $color-accent;
+			color: $color-accent;
+			display: inline-block;
+			font: {
+				weight: 700;
+			}
+			margin-top: 0.5rem;
+			padding: 0.25rem 0.75rem;
+
+			&:hover {
+				background-color: $color-accent;
+				color: $color-highlight;
+			}
+
+		}
+
+	}
+
+}
+
+
+// Featured Stories
+
+.story-link {
+	border-bottom: 2px solid $color-highlight;
+	margin: 2rem auto;
+	padding-bottom: 2rem;
+	width: 90%;
+
+	&:nth-child(2) {
+		margin-top: 4rem;
+	}
+
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	h2 {
+		color: $color-primary;
+		font: {
+			@include fntz(1.5);
 			weight: 700;
+		}
+	}
+
+	p {
+		margin-top: 0.5rem;
+	}
+
+	span {
+		font: {
+			style: italic;
+			weight: 300;
 		}
 	}
 

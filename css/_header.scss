@@ -1,7 +1,9 @@
 /* Header */
 
 .topbar {
+	margin: 0 auto;
 	overflow: hidden;
+	width: 90%;
 }
 
 .logo {
@@ -10,12 +12,12 @@
 		family: $font-heading;
 		@include fntz(1.5);
 	}
-	padding: 0.65rem 1.5rem;
+	padding: 0.65rem 0;
 }
 
 .nav-link {
 	float: right;
-	padding: 1rem 1.5rem;
+	padding: 1rem 0;
 }
 
 .nav.small {
@@ -54,10 +56,13 @@
 	font: {
 		family: $font-heading;
 	}
-	margin: 6rem auto;
+	margin: 6rem auto 8rem auto;
 	text-align: center;
 
 	p {
+		font: {
+			@include fntz(2.5);
+		}
 		line-height: 1.25em;
 
 		span {
