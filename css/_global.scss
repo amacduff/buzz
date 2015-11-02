@@ -8,6 +8,7 @@ body {
 		@include fntz(1.1);
 		weight: 400;
 	}
+	-webkit-font-smoothing: antialiased;
 }
 
 p {

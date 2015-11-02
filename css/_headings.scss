@@ -1,9 +1,15 @@
 /* Headings */
 
 h1 {
+	background-color: $color-secondary;
+	border-radius: 3rem;
+	color: $color-highlight;
+	display: inline-block;
 	font: {
 		family: $font-heading;
 		@include fntz(2);
 	}
+	margin-left: -20%;
+	padding: 1rem 2rem 1.25rem 20%;
 }
 

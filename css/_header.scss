@@ -51,6 +51,9 @@
 
 .tagline {
 	color: $color-primary;
+	font: {
+		family: $font-heading;
+	}
 	margin: 6rem auto;
 	text-align: center;
 

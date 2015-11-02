@@ -70,6 +70,7 @@ body {
   font-size: 17.6px;
   font-size: 1.1rem;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -83,9 +84,15 @@ a {
 
 /* Headings */
 h1 {
+  background-color: #4AB7DA;
+  border-radius: 3rem;
+  color: #FFFFFF;
+  display: inline-block;
   font-family: "Wisdom Script", script;
   font-size: 32px;
   font-size: 2rem;
+  margin-left: -20%;
+  padding: 1rem 2rem 1.25rem 20%;
 }
 
 /* Header */
@@ -127,6 +134,7 @@ h1 {
 
 .tagline {
   color: #194B8D;
+  font-family: "Wisdom Script", script;
   margin: 6rem auto;
   text-align: center;
 }
