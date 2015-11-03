@@ -39,17 +39,20 @@ nav.small {
 nav.large {
 	display: none;
 	float: right;
-	padding: 1.35rem 0;
 
 	ul {
 
 		li {
-			display: inline;
-			padding-right: 1rem;
+			display: inline-block;
+			padding: 1.1rem 1rem 1.35rem 0;
 		}
 
 	}
 
+}
+
+.selected {
+	border-top: 5px solid $color-secondary;
 }
 
 .tagline {
@@ -68,6 +71,33 @@ nav.large {
 
 		span {
 			color: $color-secondary;
+		}
+
+	}
+
+}
+
+.leader-header {
+	margin: 6rem auto 8rem auto;
+	overflow: hidden;
+	width: 90%;
+
+	.info {
+
+		.name {
+			font: {
+				@include fntz(1.75);
+			}
+		}
+
+		.in-town-for {
+			margin-top: 0.5rem;
+		}
+
+		.event {
+			font: {
+				weight: 700;
+			}
 		}
 
 	}

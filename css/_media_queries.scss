@@ -18,8 +18,40 @@
 		padding-left: 20%;
 	}
 
+	.leader-header {
+
+		.info {
+
+			.name {
+				font: {
+					@include fntz(2);
+				}
+			}
+
+			.title {
+				font: {
+					@include fntz(1.5);
+				}
+			}
+
+			.in-town-for {
+				margin-top: 0.5rem;
+			}
+
+			.event {
+				font: {
+					@include fntz(1.25);
+					weight: 700;
+				}
+			}
+
+		}
+
+	}
+
 	.leader,
 	.story-link,
+	.leader-header,
 	.writeup,
 	.enter {
 		width: 80%;
@@ -46,6 +78,14 @@
 
 	.writeup p {
 		@include grid(6);
+	}
+
+	.photo {
+
+		img {
+			width: 12.5rem;
+		}
+
 	}
 
 }
@@ -88,6 +128,7 @@
 		}
 	}
 
+	.leader-header,
 	.writeup,
 	.enter {
 		width: 60%;

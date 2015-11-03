@@ -143,11 +143,14 @@ nav.small ul li {
 nav.large {
   display: none;
   float: right;
-  padding: 1.35rem 0;
 }
 nav.large ul li {
-  display: inline;
-  padding-right: 1rem;
+  display: inline-block;
+  padding: 1.1rem 1rem 1.35rem 0;
+}
+
+.selected {
+  border-top: 5px solid #4AB7DA;
 }
 
 .tagline {
@@ -163,6 +166,22 @@ nav.large ul li {
 }
 .tagline p span {
   color: #4AB7DA;
+}
+
+.leader-header {
+  margin: 6rem auto 8rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+.leader-header .info .name {
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+.leader-header .info .in-town-for {
+  margin-top: 0.5rem;
+}
+.leader-header .info .event {
+  font-weight: 700;
 }
 
 /* Home Styles */
@@ -282,9 +301,9 @@ main {
   width: 90%;
 }
 .enter button {
-  background-color: #63BC5E;
+  background-color: #F1F8F7;
   border: 2px solid #63BC5E;
-  color: #F1F8F7;
+  color: #63BC5E;
   cursor: pointer;
   display: inline-block;
   font-size: 19.2px;
@@ -330,8 +349,26 @@ footer {
     padding-left: 20%;
   }
 
+  .leader-header .info .name {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+  .leader-header .info .title {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+  .leader-header .info .in-town-for {
+    margin-top: 0.5rem;
+  }
+  .leader-header .info .event {
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
   .leader,
   .story-link,
+  .leader-header,
   .writeup,
   .enter {
     width: 80%;
@@ -358,6 +395,10 @@ footer {
   }
   .writeup p:last-child {
     margin-right: 0;
+  }
+
+  .photo img {
+    width: 12.5rem;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -391,6 +432,7 @@ footer {
     padding-left: 2.5%;
   }
 
+  .leader-header,
   .writeup,
   .enter {
     width: 60%;

@@ -1,9 +1,5 @@
 /* Leader Styles */
 
-.leader-header {
-	
-}
-
 .writeup {
 	margin: 3rem auto 1rem auto;
 	overflow: hidden;
@@ -21,9 +17,9 @@
 	width: 90%;
 
 	button {
-		background-color: $color-accent;
+		background-color: $color-tertiary;
 		border: 2px solid $color-accent;
-		color: $color-tertiary;
+		color: $color-accent;
 		cursor: pointer;
 		display: inline-block;
 		font: {
