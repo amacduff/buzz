@@ -8,22 +8,23 @@ main {
 // Upcoming Leaders
 
 .leader {
-	margin-bottom: -16rem;
+	border-bottom: 3px solid $color-highlight;
+	margin: 2rem auto;
+	overflow: hidden;
+	padding-bottom: 2rem;
+	width: 90%;
 
 	&:last-child {
-		margin-bottom: -11rem;
+		border-bottom: 0;
+		margin-bottom: 5rem;
 	}
 
 }
 
 .info {
-	background-color: $color-highlight;
-	margin: 5rem auto;
-	padding: 1.5rem 1.5rem 1.5rem 5%;
-
-	&.right {
-		padding-left: 55%;
-	}
+	box-sizing: border-box;
+	@include grid(6);
+	padding: 1.5rem 0;
 
 	.name {
 		color: $color-primary;
@@ -70,19 +71,20 @@ main {
 
 	}
 
+	&.right {
+		padding-left: 1rem;
+	}
+
 }
 
 .photo {
-	position: relative;
-	top: -19rem;
-	width: 16rem;
+	box-sizing: border-box;
+	@include grid(6);
+	padding: 1rem 0;
 
-	&.left {
-		left: -4rem;
-	}
 
-	&.right {
-		right: -13rem;
+	img {
+		width: 10.938rem;
 	}
 
 }
@@ -91,7 +93,7 @@ main {
 // Featured Stories
 
 .story-link {
-	border-bottom: 2px solid $color-highlight;
+	border-bottom: 3px solid $color-highlight;
 	margin: 2rem auto;
 	padding-bottom: 2rem;
 	width: 90%;

@@ -169,19 +169,26 @@ main {
 }
 
 .leader {
-  margin-bottom: -16rem;
+  border-bottom: 3px solid #FFFFFF;
+  margin: 2rem auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  width: 90%;
 }
 .leader:last-child {
-  margin-bottom: -11rem;
+  border-bottom: 0;
+  margin-bottom: 5rem;
 }
 
 .info {
-  background-color: #FFFFFF;
-  margin: 5rem auto;
-  padding: 1.5rem 1.5rem 1.5rem 5%;
+  box-sizing: border-box;
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+  padding: 1.5rem 0;
 }
-.info.right {
-  padding-left: 55%;
+.info:last-child {
+  margin-right: 0;
 }
 .info .name {
   color: #194B8D;
@@ -213,21 +220,26 @@ main {
   background-color: #63BC5E;
   color: #FFFFFF;
 }
+.info.right {
+  padding-left: 1rem;
+}
 
 .photo {
-  position: relative;
-  top: -19rem;
-  width: 16rem;
+  box-sizing: border-box;
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+  padding: 1rem 0;
 }
-.photo.left {
-  left: -4rem;
+.photo:last-child {
+  margin-right: 0;
 }
-.photo.right {
-  right: -13rem;
+.photo img {
+  width: 10.938rem;
 }
 
 .story-link {
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
   margin: 2rem auto;
   padding-bottom: 2rem;
   width: 90%;
@@ -262,6 +274,18 @@ footer {
 .footer-content {
   margin: 0 auto;
   width: 90%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 601px) {
+  h1 {
+    padding-left: 20%;
+  }
+
+  .leader,
+  .story-link {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
