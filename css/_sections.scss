@@ -8,9 +8,22 @@ main {
 // Upcoming Leaders
 
 .leader {
+	margin-bottom: -16rem;
+
+	&:last-child {
+		margin-bottom: -11rem;
+	}
+
+}
+
+.info {
 	background-color: $color-highlight;
 	margin: 5rem auto;
 	padding: 1.5rem 1.5rem 1.5rem 5%;
+
+	&.right {
+		padding-left: 55%;
+	}
 
 	.name {
 		color: $color-primary;
@@ -26,6 +39,8 @@ main {
 			style: italic;
 			weight: 300;
 		}
+		line-height: 1.15em;
+		margin-top: 0.25rem;
 	}
 
 	.date {
@@ -53,6 +68,21 @@ main {
 
 		}
 
+	}
+
+}
+
+.photo {
+	position: relative;
+	top: -19rem;
+	width: 16rem;
+
+	&.left {
+		left: -4rem;
+	}
+
+	&.right {
+		right: -13rem;
 	}
 
 }

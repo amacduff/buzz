@@ -70,6 +70,7 @@ body {
   font-size: 17.6px;
   font-size: 1.1rem;
   font-weight: 400;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -81,6 +82,10 @@ a {
   color: #194B8D;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+
+img {
+  max-width: 100%;
 }
 
 ::-moz-selection {
@@ -164,27 +169,39 @@ main {
 }
 
 .leader {
+  margin-bottom: -16rem;
+}
+.leader:last-child {
+  margin-bottom: -11rem;
+}
+
+.info {
   background-color: #FFFFFF;
   margin: 5rem auto;
   padding: 1.5rem 1.5rem 1.5rem 5%;
 }
-.leader .name {
+.info.right {
+  padding-left: 55%;
+}
+.info .name {
   color: #194B8D;
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.leader .title {
+.info .title {
   font-size: 21.6px;
   font-size: 1.35rem;
   font-style: italic;
   font-weight: 300;
+  line-height: 1.15em;
+  margin-top: 0.25rem;
 }
-.leader .date {
+.info .date {
   font-size: 20px;
   font-size: 1.25rem;
 }
-.leader .details-link a {
+.info .details-link a {
   border: 2px solid #63BC5E;
   color: #63BC5E;
   display: inline-block;
@@ -192,9 +209,21 @@ main {
   margin-top: 0.5rem;
   padding: 0.25rem 0.75rem;
 }
-.leader .details-link a:hover {
+.info .details-link a:hover {
   background-color: #63BC5E;
   color: #FFFFFF;
+}
+
+.photo {
+  position: relative;
+  top: -19rem;
+  width: 16rem;
+}
+.photo.left {
+  left: -4rem;
+}
+.photo.right {
+  right: -13rem;
 }
 
 .story-link {

@@ -8,6 +8,7 @@ body {
 		@include fntz(1.1);
 		weight: 400;
 	}
+	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -19,6 +20,10 @@ a {
 	color: $color-primary;
 	text-decoration: none;
 	transition: all 0.2s ease-in-out;
+}
+
+img {
+	max-width: 100%;
 }
 
 ::-moz-selection {
