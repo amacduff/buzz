@@ -19,7 +19,9 @@
 	}
 
 	.leader,
-	.story-link {
+	.story-link,
+	.writeup,
+	.enter {
 		width: 80%;
 	}
 
@@ -34,6 +36,16 @@
 	.leader,
 	.story-link {
 		width: 60%;
+	}
+
+	.about {
+		h1 {
+			padding-left: 20%;
+		}
+	}
+
+	.writeup p {
+		@include grid(6);
 	}
 
 }
@@ -67,6 +79,18 @@
 	.leader,
 	.story-link {
 		width: 80%;
+	}
+
+	.about {
+		h1 {
+			margin-left: 17.5%;
+			padding-left: 2.5%;
+		}
+	}
+
+	.writeup,
+	.enter {
+		width: 60%;
 	}
 
 }

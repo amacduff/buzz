@@ -1,0 +1,45 @@
+/* Leader Styles */
+
+.leader-header {
+	
+}
+
+.writeup {
+	margin: 3rem auto 1rem auto;
+	overflow: hidden;
+	width: 90%;
+
+	p {
+		padding-bottom: 1rem;
+	}
+
+}
+
+.enter {
+	clear: both;
+	margin: 0 auto 5rem auto;
+	width: 90%;
+
+	button {
+		background-color: $color-accent;
+		border: 2px solid $color-accent;
+		color: $color-tertiary;
+		cursor: pointer;
+		display: inline-block;
+		font: {
+			@include fntz(1.2);
+			weight: 700;
+		}
+		line-height: 1.6em;
+		margin-top: 0.5rem;
+		padding: 0.5rem 2rem;
+
+		&:hover {
+			background-color: $color-accent;
+			color: $color-highlight;
+		}
+
+	}
+
+}
+
