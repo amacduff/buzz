@@ -20,7 +20,7 @@
 	padding: 1rem 0;
 }
 
-.nav.small {
+nav.small {
 	background-color: $color-highlight;
 	display: none;
 
@@ -36,9 +36,10 @@
 
 }
 
-.nav.large {
+nav.large {
 	display: none;
 	float: right;
+	padding: 1.35rem 0;
 
 	ul {
 

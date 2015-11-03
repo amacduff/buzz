@@ -65,6 +65,7 @@ table {
 /* Global Styles */
 body {
   background-color: #F1F8F7;
+  border-top: 5px solid #194B8D;
   color: #222222;
   font-family: "Lato", sans-serif;
   font-size: 17.6px;
@@ -129,21 +130,22 @@ h1 {
   padding: 1rem 0;
 }
 
-.nav.small {
+nav.small {
   background-color: #FFFFFF;
   display: none;
 }
-.nav.small ul li {
+nav.small ul li {
   border-bottom: 2px solid #F1F8F7;
   padding: 1rem;
   text-align: center;
 }
 
-.nav.large {
+nav.large {
   display: none;
   float: right;
+  padding: 1.35rem 0;
 }
-.nav.large ul li {
+nav.large ul li {
   display: inline;
   padding-right: 1rem;
 }
@@ -267,6 +269,7 @@ main {
 /* Footer */
 footer {
   background-color: #63BC5E;
+  clear: both;
   color: #FFFFFF;
   padding: 2rem 0;
 }
@@ -278,8 +281,56 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 601px) {
+  .nav-link {
+    display: none;
+  }
+
+  nav.small {
+    display: none;
+  }
+
+  nav.large {
+    display: inline-block;
+  }
+
   h1 {
     padding-left: 20%;
+  }
+
+  .leader,
+  .story-link {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 861px) {
+  h1 {
+    padding-left: 30%;
+  }
+
+  .leader,
+  .story-link {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .upcoming-leaders,
+  .featured-stories {
+    float: left;
+  }
+
+  .upcoming-leaders {
+    width: 60%;
+  }
+  .upcoming-leaders h1 {
+    padding-left: 20%;
+  }
+
+  .featured-stories {
+    width: 40%;
+  }
+  .featured-stories h1 {
+    margin-left: 2.5%;
+    padding-left: 7.5%;
   }
 
   .leader,
