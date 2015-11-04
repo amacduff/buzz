@@ -34,6 +34,12 @@ nav.small {
 			border-bottom: 2px solid $color-tertiary;
 			padding: 1rem;
 			text-align: center;
+
+			a.selected {
+				border-top: 0;
+				color: $color-secondary;
+			}
+
 		}
 
 	}

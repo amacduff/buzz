@@ -141,6 +141,10 @@ nav.small ul li {
   padding: 1rem;
   text-align: center;
 }
+nav.small ul li a.selected {
+  border-top: 0;
+  color: #4AB7DA;
+}
 
 nav.large {
   display: none;
@@ -331,7 +335,7 @@ main {
 
 /* Browse Leaders */
 .filter {
-  margin: 4rem auto;
+  margin: 4rem auto 3rem auto;
   overflow: hidden;
   padding-bottom: 2rem;
   width: 90%;
@@ -351,9 +355,47 @@ main {
   color: #63BC5E;
   padding: 0.75rem;
 }
-.filter ul li a:hover {
+.filter ul li a:hover, .filter ul li a.current {
   background-color: #63BC5E;
   color: #FFFFFF;
+}
+
+.result {
+  background-color: #FFFFFF;
+  clear: both;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+.result .info {
+  float: left;
+  margin-left: 1rem;
+  padding: 0.5rem 0;
+}
+.result .info .name {
+  color: #63BC5E;
+}
+.result .info .title,
+.result .info .date {
+  display: inline;
+}
+.result:last-child {
+  margin-bottom: 5rem;
+}
+
+.photo-sq {
+  float: left;
+  width: 5rem;
+}
+
+.icon {
+  float: right;
+  padding: 0.5rem 1rem;
+}
+.icon i {
+  color: #194B8D;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /* Footer */

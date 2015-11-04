@@ -1,7 +1,7 @@
 /* Browse Leaders */
 
 .filter {
-	margin: 4rem auto;
+	margin: 4rem auto 3rem auto;
 	overflow: hidden;
 	padding-bottom: 2rem;
 	width: 90%;
@@ -25,7 +25,8 @@
 				color: $color-accent;
 				padding: 0.75rem;
 
-				&:hover {
+				&:hover,
+				&.current {
 					background-color: $color-accent;
 					color: $color-highlight;
 				}
@@ -34,6 +35,53 @@
 
 		}
 
+	}
+
+}
+
+.result {
+	background-color: $color-highlight;
+	clear: both;
+	margin: 1.5rem auto;
+	overflow: hidden;
+	width: 90%;
+
+	.info {
+		float: left;
+		margin-left: 1rem;
+		padding: 0.5rem 0;
+
+		.name {
+			color: $color-accent;
+		}
+
+		.title,
+		.date {
+			display: inline;
+		}
+
+	}
+
+	&:last-child {
+		margin-bottom: 5rem;
+	}
+
+}
+
+.photo-sq {
+	float: left;
+	width: 5rem;
+}
+
+.icon {
+	float: right;
+	padding: 0.5rem 1rem;
+
+	i {
+		color: $color-primary;
+		font: {
+			@include fntz(1.5);
+		}
 	}
 
 }
