@@ -23,6 +23,7 @@
 nav.small {
 	background-color: $color-highlight;
 	display: none;
+	overflow: hidden;
 
 	ul {
 
@@ -75,6 +76,16 @@ nav.large {
 
 	}
 
+}
+
+#my-textrotator {
+	list-style: none;
+	padding:0;
+	margin: 0 0 24px;
+}
+
+#my-textrotator li {
+	display: none;
 }
 
 .leader-header {

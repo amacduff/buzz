@@ -133,6 +133,7 @@ h1 {
 nav.small {
   background-color: #FFFFFF;
   display: none;
+  overflow: hidden;
 }
 nav.small ul li {
   border-bottom: 2px solid #F1F8F7;
@@ -166,6 +167,16 @@ nav.large ul li {
 }
 .tagline p span {
   color: #4AB7DA;
+}
+
+#my-textrotator {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+#my-textrotator li {
+  display: none;
 }
 
 .leader-header {
