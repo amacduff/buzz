@@ -125,6 +125,7 @@ h1 {
   padding: 0.65rem 0;
 }
 
+/* Navigation */
 .nav-link {
   float: right;
   padding: 1rem 0;
@@ -154,31 +155,30 @@ nav.large ul li {
   border-top: 5px solid #4AB7DA;
 }
 
-.tagline {
+/* Home Header */
+.tagline,
+.quote {
   color: #194B8D;
   font-family: "Wisdom Script", script;
   margin: 6rem auto 8rem auto;
   text-align: center;
 }
-.tagline p {
+.tagline p,
+.tagline blockquote,
+.quote p,
+.quote blockquote {
   font-size: 40px;
   font-size: 2.5rem;
   line-height: 1.25em;
 }
-.tagline p span {
+.tagline p span,
+.tagline blockquote span,
+.quote p span,
+.quote blockquote span {
   color: #4AB7DA;
 }
 
-#my-textrotator {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 24px;
-}
-
-#my-textrotator li {
-  display: none;
-}
-
+/* Leader Header */
 .leader-header {
   margin: 6rem auto 8rem auto;
   overflow: hidden;
@@ -325,6 +325,33 @@ main {
   padding: 0.5rem 2rem;
 }
 .enter button:hover {
+  background-color: #63BC5E;
+  color: #FFFFFF;
+}
+
+/* Browse Leaders */
+.filter {
+  margin: 4rem auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  width: 90%;
+}
+.filter h2 {
+  color: #194B8D;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.filter ul li {
+  display: inline-block;
+  margin: 2rem 1.5rem 0 0;
+}
+.filter ul li a {
+  border: 2px solid #63BC5E;
+  box-sizing: border-box;
+  color: #63BC5E;
+  padding: 0.75rem;
+}
+.filter ul li a:hover {
   background-color: #63BC5E;
   color: #FFFFFF;
 }

@@ -46,7 +46,7 @@
 			</nav>
 
 			<div class="tagline">
-				<p>Your chance to meet<br/>a <span>design</span> leader.</p>
+				<p>Your chance to meet<br/>a <span class="wordz">design, tech, business</span> leader.</p>
 			</div>
 
 		</header>
@@ -127,7 +127,16 @@
 		</footer>
 
 		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="js/nav_toggle.js"></script>
+		<!-- <script src="js/nav_toggle.js"></script> -->
+		<script src="js/text-rotator.js"></script>
+		<script type="text/javascript">
+			$('.wordz').textRotator({
+				// animation types
+				animation: "fadeIn",
+				// animation speed in ms
+				speed: "4000"
+			});
+		</script>
 
 	</body>
 
