@@ -39,20 +39,29 @@
 
 }
 
+.display-results {
+	margin: 0 auto 5rem auto;
+	overflow: hidden;
+	width: 90%;
+}
+
 .result {
 	background-color: $color-highlight;
 	clear: both;
-	margin: 1.5rem auto;
+	@include grid(12);
+	margin: 1rem auto;
 	overflow: hidden;
-	width: 90%;
 
 	.info {
 		float: left;
 		margin-left: 1rem;
 		padding: 0.5rem 0;
 
-		.name {
-			color: $color-accent;
+		.name a {
+			font: {
+				@include fntz(1.25);
+				weight: 700;
+			}
 		}
 
 		.title,
@@ -60,17 +69,30 @@
 			display: inline;
 		}
 
-	}
+		.title {
+			font: {
+				@include fntz(1.1);
+				style: italic;
+				weight: 300;
+			}
+			line-height: 1.15em;
+			margin-top: 0.25rem;
+		}
 
-	&:last-child {
-		margin-bottom: 5rem;
+		.date {
+			font: {
+				@include fntz(1.1);
+			}
+			margin-left: 1rem;
+		}
+
 	}
 
 }
 
 .photo-sq {
 	float: left;
-	width: 5rem;
+	width: 4rem;
 }
 
 .icon {

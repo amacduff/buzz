@@ -80,9 +80,12 @@ p {
 }
 
 a {
-  color: #194B8D;
+  color: #63BC5E;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #A2E567;
 }
 
 img {
@@ -115,6 +118,12 @@ h1 {
   margin: 0 auto;
   overflow: hidden;
   width: 90%;
+}
+.topbar a {
+  color: #194B8D;
+}
+.topbar a:hover {
+  color: #4AB7DA;
 }
 
 .logo {
@@ -215,24 +224,23 @@ main {
   border-bottom: 0;
   margin-bottom: 5rem;
 }
-
-.info {
+.leader .info {
   box-sizing: border-box;
   float: left;
-  width: 49%;
-  margin-right: 2%;
+  width: 48%;
+  margin-right: 4%;
   padding: 1.5rem 0;
 }
-.info:last-child {
+.leader .info:last-child {
   margin-right: 0;
 }
-.info .name {
+.leader .info .name {
   color: #194B8D;
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.info .title {
+.leader .info .title {
   font-size: 21.6px;
   font-size: 1.35rem;
   font-style: italic;
@@ -240,11 +248,11 @@ main {
   line-height: 1.15em;
   margin-top: 0.25rem;
 }
-.info .date {
+.leader .info .date {
   font-size: 20px;
   font-size: 1.25rem;
 }
-.info .details-link a {
+.leader .info .details-link a {
   border: 2px solid #63BC5E;
   color: #63BC5E;
   display: inline-block;
@@ -252,19 +260,19 @@ main {
   margin-top: 0.5rem;
   padding: 0.25rem 0.75rem;
 }
-.info .details-link a:hover {
+.leader .info .details-link a:hover {
   background-color: #63BC5E;
   color: #FFFFFF;
 }
-.info.right {
+.leader .info.right {
   padding-left: 1rem;
 }
 
 .photo {
   box-sizing: border-box;
   float: left;
-  width: 49%;
-  margin-right: 2%;
+  width: 48%;
+  margin-right: 4%;
   padding: 1rem 0;
 }
 .photo:last-child {
@@ -360,32 +368,55 @@ main {
   color: #FFFFFF;
 }
 
+.display-results {
+  margin: 0 auto 5rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+
 .result {
   background-color: #FFFFFF;
   clear: both;
-  margin: 1.5rem auto;
+  float: left;
+  width: 100%;
+  margin-right: 4%;
+  margin: 1rem auto;
   overflow: hidden;
-  width: 90%;
+}
+.result:last-child {
+  margin-right: 0;
 }
 .result .info {
   float: left;
   margin-left: 1rem;
   padding: 0.5rem 0;
 }
-.result .info .name {
-  color: #63BC5E;
+.result .info .name a {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 .result .info .title,
 .result .info .date {
   display: inline;
 }
-.result:last-child {
-  margin-bottom: 5rem;
+.result .info .title {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.15em;
+  margin-top: 0.25rem;
+}
+.result .info .date {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-left: 1rem;
 }
 
 .photo-sq {
   float: left;
-  width: 5rem;
+  width: 4rem;
 }
 
 .icon {
@@ -425,6 +456,18 @@ footer {
     display: inline-block;
   }
 
+  .tagline,
+  .quote {
+    margin: 7rem auto 9rem auto;
+  }
+  .tagline p,
+  .tagline blockquote,
+  .quote p,
+  .quote blockquote {
+    font-size: 44px;
+    font-size: 2.75rem;
+  }
+
   h1 {
     padding-left: 20%;
   }
@@ -453,8 +496,59 @@ footer {
   .enter {
     width: 80%;
   }
+
+  .result {
+    background-color: #FFFFFF;
+    clear: none;
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .result:last-child {
+    margin-right: 0;
+  }
+  .result:nth-child(even) {
+    margin-right: 0;
+  }
+  .result .info {
+    margin-left: 1rem;
+    padding: 0.5rem 0;
+  }
+  .result .info .name {
+    color: #63BC5E;
+  }
+  .result .info .title,
+  .result .info .date {
+    display: inline;
+  }
+
+  .photo-sq {
+    width: 100%;
+  }
+
+  .icon {
+    float: right;
+    padding: 0.5rem 1rem;
+  }
+  .icon i {
+    color: #194B8D;
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 861px) {
+  .tagline,
+  .quote {
+    margin: 8rem auto 10rem auto;
+  }
+  .tagline p,
+  .tagline blockquote,
+  .quote p,
+  .quote blockquote {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+
   h1 {
     padding-left: 30%;
   }
@@ -470,8 +564,8 @@ footer {
 
   .writeup p {
     float: left;
-    width: 49%;
-    margin-right: 2%;
+    width: 48%;
+    margin-right: 4%;
   }
   .writeup p:last-child {
     margin-right: 0;
