@@ -45,6 +45,15 @@ nav.small {
 			padding: 1rem;
 			text-align: center;
 
+			a {
+				color: $color-primary;
+
+				&:hover {
+					color: $color-secondary;
+				}
+
+			}
+
 			a.selected {
 				border-top: 0;
 				color: $color-secondary;
