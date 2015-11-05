@@ -46,7 +46,8 @@ select {
 		family: $font-text;
 		@include fntz(1.1);
 	}
-	padding: 0.75rem;
+	margin-top: 1rem;
+	padding: 1rem;
 }
 
 .display-results {
