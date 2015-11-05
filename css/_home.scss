@@ -7,34 +7,58 @@ main {
 
 // Upcoming Leaders
 
-.leader {
-	border-bottom: 3px solid $color-highlight;
-	margin: 2rem auto;
-	overflow: hidden;
-	padding-bottom: 2rem;
-	width: 90%;
+// .leader {
+// 	border-bottom: 3px solid $color-highlight;
+// 	margin: 2rem auto;
+// 	overflow: hidden;
+// 	padding-bottom: 2rem;
+// 	width: 90%;
 
-	&:last-child {
-		border-bottom: 0;
-		margin-bottom: 5rem;
-	}
+// 	&:last-child {
+// 		border-bottom: 0;
+// 		margin-bottom: 5rem;
+// 	}
+
+// }
+
+.leaders {
+	margin: 3rem auto 5rem auto;
+	overflow: hidden;
+	width: 90%;
+}
+
+.leader {
+	background-color: $color-highlight;
+	clear: both;
+	@include grid(12);
+	margin: 1rem auto;
+	overflow: hidden;
 
 	.info {
-		box-sizing: border-box;
-		@include grid(6);
-		padding: 1.5rem 0;
+		float: left;
+		margin-left: 1rem;
+		padding: 0.5rem 0;
 
 		.name {
-			color: $color-primary;
-			font: {
-				@include fntz(1.5);
-				weight: 700;
+			display: block;
+
+			a {
+				font: {
+					@include fntz(1.25);
+					weight: 700;
+				}
 			}
+
+		}
+
+		.title,
+		.date {
+			display: inline;
 		}
 
 		.title {
 			font: {
-				@include fntz(1.35);
+				@include fntz(1.1);
 				style: italic;
 				weight: 300;
 			}
@@ -44,38 +68,70 @@ main {
 
 		.date {
 			font: {
-				@include fntz(1.25);
+				@include fntz(1.1);
 			}
-		}
-
-		.details-link {
-
-			a {
-				border: 2px solid $color-accent;
-				color: $color-accent;
-				display: inline-block;
-				font: {
-					weight: 700;
-				}
-				margin-top: 0.5rem;
-				padding: 0.25rem 0.75rem;
-
-				&:hover {
-					background-color: $color-accent;
-					color: $color-highlight;
-				}
-
-			}
-
-		}
-
-		&.right {
-			padding-left: 1rem;
+			margin-left: 1rem;
 		}
 
 	}
 
 }
+
+// .info {
+// 	box-sizing: border-box;
+// 	@include grid(6);
+// 	padding: 1.5rem 0;
+
+// 	.name {
+// 		color: $color-primary;
+// 		font: {
+// 			@include fntz(1.5);
+// 			weight: 700;
+// 		}
+// 	}
+
+// 	.title {
+// 		font: {
+// 			@include fntz(1.35);
+// 			style: italic;
+// 			weight: 300;
+// 		}
+// 		line-height: 1.15em;
+// 		margin-top: 0.25rem;
+// 	}
+
+// 	.date {
+// 		font: {
+// 			@include fntz(1.25);
+// 		}
+// 	}
+
+// 	.details-link {
+
+// 		a {
+// 			border: 2px solid $color-accent;
+// 			color: $color-accent;
+// 			display: inline-block;
+// 			font: {
+// 				weight: 700;
+// 			}
+// 			margin-top: 0.5rem;
+// 			padding: 0.25rem 0.75rem;
+
+// 			&:hover {
+// 				background-color: $color-accent;
+// 				color: $color-highlight;
+// 			}
+
+// 		}
+
+// 	}
+
+// 	&.right {
+// 		padding-left: 1rem;
+// 	}
+
+// }
 
 .photo {
 	box-sizing: border-box;
