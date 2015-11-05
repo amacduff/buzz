@@ -13,8 +13,36 @@
 
 .enter {
 	clear: both;
-	margin: 0 auto 5rem auto;
+	margin: 2rem auto 5rem auto;
+	overflow: hidden;
 	width: 90%;
+
+	h2 {
+		color: $color-primary;
+		font: {
+			@include fntz(1.25);
+		}
+	}
+
+	.form-element {
+		@include grid(12);
+	}
+
+	label {
+		display: block;
+		padding: 1.5rem 0 0.5rem 0;
+	}
+
+	input {
+		border: 2px solid $color-highlight;
+		display: block;
+		font: {
+			family: $font-text;
+			@include fntz(1);
+		}
+		padding: 0.5rem;
+		width: 100%;
+	}
 
 	button {
 		background-color: $color-tertiary;
@@ -27,7 +55,7 @@
 			weight: 700;
 		}
 		line-height: 1.6em;
-		margin-top: 0.5rem;
+		margin-top: 2rem;
 		padding: 0.5rem 2rem;
 
 		&:hover {

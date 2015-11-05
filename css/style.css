@@ -166,20 +166,27 @@ nav.large {
   float: right;
 }
 nav.large ul li {
+  border-top: 5px solid #F1F8F7;
   display: inline-block;
-  padding: 1.1rem 1rem 1.35rem 0;
+  padding: 1rem 1rem 1.35rem 0;
 }
-
-.selected {
+nav.large ul li.selected {
   border-top: 5px solid #4AB7DA;
 }
 
 /* Home Header */
+.tagline {
+  margin: 6rem auto 4rem auto;
+}
+
+.quote {
+  margin: 6rem auto 8rem auto;
+}
+
 .tagline,
 .quote {
   color: #194B8D;
   font-family: "Wisdom Script", script;
-  margin: 6rem auto 8rem auto;
   text-align: center;
 }
 .tagline p,
@@ -197,21 +204,59 @@ nav.large ul li {
   color: #4AB7DA;
 }
 
-/* Leader Header */
-.leader-header {
-  margin: 6rem auto 8rem auto;
+.intro {
+  margin: 0 auto 4rem auto;
   overflow: hidden;
   width: 90%;
 }
+.intro p {
+  box-sizing: border-box;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+/* Leader Header */
+.leader-header {
+  margin: 4rem auto 5rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+.leader-header .photo {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.leader-header .photo:last-child {
+  margin-right: 0;
+}
+.leader-header .info {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
+}
+.leader-header .info:last-child {
+  margin-right: 0;
+}
 .leader-header .info .name {
+  color: #194B8D;
   font-size: 28px;
   font-size: 1.75rem;
+  font-weight: 700;
+}
+.leader-header .info .title {
+  color: #4AB7DA;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
 }
 .leader-header .info .in-town-for {
+  font-weight: 300;
   margin-top: 0.5rem;
 }
-.leader-header .info .event {
+.leader-header .info .date {
+  color: #194B8D;
   font-weight: 700;
+  margin-top: 0.5rem;
 }
 
 /* Home Styles */
@@ -327,8 +372,35 @@ main {
 
 .enter {
   clear: both;
-  margin: 0 auto 5rem auto;
+  margin: 2rem auto 5rem auto;
+  overflow: hidden;
   width: 90%;
+}
+.enter h2 {
+  color: #194B8D;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.enter .form-element {
+  float: left;
+  width: 100%;
+  margin-right: 2%;
+}
+.enter .form-element:last-child {
+  margin-right: 0;
+}
+.enter label {
+  display: block;
+  padding: 1.5rem 0 0.5rem 0;
+}
+.enter input {
+  border: 2px solid #FFFFFF;
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 .enter button {
   background-color: #F1F8F7;
@@ -340,7 +412,7 @@ main {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.6em;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   padding: 0.5rem 2rem;
 }
 .enter button:hover {
@@ -473,12 +545,14 @@ footer {
     display: inline-block;
   }
 
-  .tagline,
+  .tagline {
+    margin: 7rem auto 5rem auto;
+  }
+
   .quote {
     margin: 7rem auto 9rem auto;
   }
-  .tagline p,
-  .tagline blockquote,
+
   .quote p,
   .quote blockquote {
     font-size: 44px;
@@ -512,7 +586,8 @@ footer {
   .display-results,
   .leader-header,
   .writeup,
-  .enter {
+  .enter,
+  .intro {
     width: 80%;
   }
 
@@ -584,18 +659,54 @@ footer {
   .leader .info .name {
     color: #63BC5E;
   }
+
+  .intro p {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .intro p:last-child {
+    margin-right: 0;
+  }
+
+  .photo img {
+    max-width: 14rem;
+  }
+
+  .enter .form-element {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .enter .form-element:last-child {
+    margin-right: 0;
+  }
+  .enter .form-element:nth-child(3) {
+    margin-right: 0;
+  }
+  .enter .form-element:last-child {
+    margin-right: 2%;
+  }
 }
 @media screen and (min-width: 961px) {
-  .tagline,
+  .tagline {
+    margin: 8rem auto 7rem auto;
+  }
+
   .quote {
     margin: 8rem auto 10rem auto;
   }
+
   .tagline p,
   .tagline blockquote,
   .quote p,
   .quote blockquote {
     font-size: 48px;
     font-size: 3rem;
+  }
+
+  .intro p {
+    padding-right: 1rem;
   }
 
   h1 {
@@ -620,7 +731,7 @@ footer {
   }
 
   .photo img {
-    width: 12.5rem;
+    max-width: 16rem;
   }
 
   .upcoming-leaders,
@@ -639,7 +750,7 @@ footer {
     width: 40%;
   }
   .featured-stories h1 {
-    margin-left: 2.5%;
+    margin-left: 12.5%;
     padding-left: 7.5%;
   }
 
@@ -653,7 +764,7 @@ footer {
 
   .filter,
   .display-results {
-    width: 90%;
+    width: 80%;
   }
 
   .display-results .leader {
@@ -672,42 +783,55 @@ footer {
   }
 
   .browse-leaders h1 {
-    padding-left: 15%;
+    padding-left: 20%;
+  }
+
+  .enter .form-element {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+  }
+  .enter .form-element:last-child {
+    margin-right: 0;
+  }
+  .enter input {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1201px) {
-  .upcoming-leaders {
+  .intro {
     width: 70%;
   }
+
+  main {
+    width: 75%;
+  }
+
+  .upcoming-leaders {
+    display: block;
+  }
   .upcoming-leaders h1 {
-    padding-left: 15%;
+    margin-left: -6.5%;
+    padding-left: 6.5%;
   }
 
   .featured-stories {
-    width: 30%;
+    display: block;
   }
   .featured-stories h1 {
     margin-left: 2.5%;
     padding-left: 7.5%;
   }
 
-  .leader {
-    float: left;
-    width: 23.5%;
-    margin-right: 2%;
-  }
-  .leader:last-child {
-    margin-right: 0;
-  }
-  .leader:nth-child(3n+3) {
-    margin-right: 2%;
-  }
-  .leader:nth-child(4n+4) {
-    margin-right: 0;
+  .browse-leaders h1 {
+    margin-left: -3.5%;
+    padding-left: 3.5%;
   }
 
-  .leaders {
-    width: 90%;
+  .display-results,
+  .leaders,
+  .filter {
+    width: 100%;
   }
 
   .story-links {
@@ -715,29 +839,17 @@ footer {
   }
 
   .about h1 {
-    margin-left: 17.5%;
-    padding-left: 2.5%;
+    margin-left: -3.5%;
+    padding-left: 3.5%;
   }
 
-  .leader-header,
+  .leader-header {
+    width: 75%;
+  }
+
   .writeup,
   .enter {
-    width: 60%;
-  }
-
-  .display-results .leader {
-    float: left;
-    width: 15%;
-    margin-right: 2%;
-  }
-  .display-results .leader:last-child {
-    margin-right: 0;
-  }
-  .display-results .leader:nth-child(4n+4) {
-    margin-right: 2%;
-  }
-  .display-results .leader:nth-child(5n+5) {
-    margin-right: 0;
+    width: 100%;
   }
 }
 
