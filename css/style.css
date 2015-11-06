@@ -88,6 +88,10 @@ a:hover {
   color: #A2E567;
 }
 
+cite {
+  display: block;
+}
+
 img {
   max-width: 100%;
 }
