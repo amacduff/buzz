@@ -75,7 +75,9 @@
 	.leader-header,
 	.writeup,
 	.enter,
-	.intro {
+	.intro,
+	.stories-list,
+	.best-of-links {
 		width: 80%;
 	}
 
@@ -225,7 +227,8 @@
 		padding-left: 30%;
 	}
 
-	.story-links {
+	.story-links,
+	.best-of-links {
 		width: 60%;
 	}
 
@@ -254,7 +257,9 @@
 	}
 
 	.upcoming-leaders,
-	.featured-stories {
+	.featured-stories,
+	.stories,
+	.best-of-stories {
 		float: left;
 	}
 
@@ -277,7 +282,8 @@
 
 	}
 
-	.leaders {
+	.leaders,
+	.stories-list {
 		width: 90%;
 	}
 
@@ -329,10 +335,21 @@
 
 	.stories {
 		width: 60%;
+
+		h1 {
+			padding-left: 15%;
+		}
+
 	}
 
 	.best-of-stories {
 		width: 40%;
+
+		h1 {
+			margin-left: 13%;
+			padding-left: 7%;
+		}
+
 	}
 
 }
@@ -348,7 +365,6 @@
 	}
 
 	.upcoming-leaders {
-		display: block;
 
 		h1 {
 			margin-left: -6.5%;
@@ -358,7 +374,6 @@
 	}
 
 	.featured-stories {
-		display: block;
 
 		h1 {
 			margin-left: 2.5%;
@@ -378,19 +393,23 @@
 
 	.display-results,
 	.leaders,
-	.filter {
+	.filter,
+	.stories-list {
 		width: 100%;
 	}
 
-	.story-links {
+	.story-links,
+	.best-of-links {
 		width: 80%;
 	}
 
 	.about {
+
 		h1 {
 			margin-left: -3.5%;
 			padding-left: 3.5%;
 		}
+
 	}
 
 	.leader-header {
@@ -401,6 +420,23 @@
 	.writeup,
 	.enter {
 		width: 100%;
+	}
+
+	.stories {
+
+		h1 {
+			margin-left: -5%;
+			padding-left: 5%;
+		}
+
+	}
+
+	.best-of-stories {
+
+		h1 {
+			margin-left: 2.5%;
+		}
+
 	}
 
 }

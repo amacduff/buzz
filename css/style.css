@@ -583,12 +583,56 @@ main {
 }
 
 /* Stories Styles */
+.stories-list {
+  margin: 0 auto 5rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+.stories-list h2 {
+  color: #194B8D;
+  font-size: 28px;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.stories-list span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.story {
+  border-bottom: 3px solid #FFFFFF;
+  margin: 3rem 0;
+  padding-bottom: 3rem;
+}
+.story .byline {
+  margin-bottom: 1rem;
+}
+.story i {
+  color: #4AB7DA;
+}
+.story .comments {
+  color: #194B8D;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.best-of-links {
+  margin: 3rem auto 5rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+.best-of-links ul li {
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .pagination {
-  margin: 5rem 0;
+  margin: 2rem 0 0 0;
 }
 .pagination ul li {
   display: inline;
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 
 /* Footer */
@@ -660,7 +704,9 @@ footer {
   .leader-header,
   .writeup,
   .enter,
-  .intro {
+  .intro,
+  .stories-list,
+  .best-of-links {
     width: 80%;
   }
 
@@ -790,7 +836,8 @@ footer {
     padding-left: 30%;
   }
 
-  .story-links {
+  .story-links,
+  .best-of-links {
     width: 60%;
   }
 
@@ -818,7 +865,9 @@ footer {
   }
 
   .upcoming-leaders,
-  .featured-stories {
+  .featured-stories,
+  .stories,
+  .best-of-stories {
     float: left;
   }
 
@@ -837,7 +886,8 @@ footer {
     padding-left: 7.5%;
   }
 
-  .leaders {
+  .leaders,
+  .stories-list {
     width: 90%;
   }
 
@@ -884,9 +934,16 @@ footer {
   .stories {
     width: 60%;
   }
+  .stories h1 {
+    padding-left: 15%;
+  }
 
   .best-of-stories {
     width: 40%;
+  }
+  .best-of-stories h1 {
+    margin-left: 13%;
+    padding-left: 7%;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -898,17 +955,11 @@ footer {
     width: 75%;
   }
 
-  .upcoming-leaders {
-    display: block;
-  }
   .upcoming-leaders h1 {
     margin-left: -6.5%;
     padding-left: 6.5%;
   }
 
-  .featured-stories {
-    display: block;
-  }
   .featured-stories h1 {
     margin-left: 2.5%;
     padding-left: 7.5%;
@@ -921,11 +972,13 @@ footer {
 
   .display-results,
   .leaders,
-  .filter {
+  .filter,
+  .stories-list {
     width: 100%;
   }
 
-  .story-links {
+  .story-links,
+  .best-of-links {
     width: 80%;
   }
 
@@ -941,6 +994,15 @@ footer {
   .writeup,
   .enter {
     width: 100%;
+  }
+
+  .stories h1 {
+    margin-left: -5%;
+    padding-left: 5%;
+  }
+
+  .best-of-stories h1 {
+    margin-left: 2.5%;
   }
 }
 

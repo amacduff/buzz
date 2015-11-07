@@ -1,12 +1,75 @@
 /* Stories Styles */
 
+.stories-list {
+	margin: 0 auto 5rem auto;
+	overflow: hidden;
+	width: 90%;
+
+	h2 {
+		color: $color-primary;
+		font: {
+			@include fntz(1.75);
+			weight: 700;
+		}
+	}
+
+	span {
+		font: {
+			style: italic;
+			weight: 300;
+		}
+	}
+
+}
+
+.story {
+	border-bottom: 3px solid $color-highlight;
+	margin: 3rem 0;
+	padding-bottom: 3rem;
+
+	.byline {
+		margin-bottom: 1rem;
+	}
+
+	i {
+		color: $color-secondary;
+	}
+
+	.comments {
+		color: $color-primary;
+		font: {
+			weight: 300;
+		}
+		margin-top: 1rem;
+	}
+
+}
+
+.best-of-links {
+	margin: 3rem auto 5rem auto;
+	overflow: hidden;
+	width: 90%;
+
+	ul {
+
+		li {
+			font: {
+				@include fntz(1.5);
+			}
+			margin-bottom: 2rem;
+		}
+
+	}
+
+}
+
 .pagination {
-	margin: 5rem 0;
+	margin: 2rem 0 0 0;
 	ul {
 
 		li {
 			display: inline;
-			padding-right: 2rem;
+			padding-right: 1.5rem;
 		}
 
 	}
