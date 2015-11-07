@@ -42,11 +42,12 @@ nav.small {
 
 		li {
 			border-bottom: 2px solid $color-tertiary;
-			padding: 1rem;
 			text-align: center;
 
 			a {
 				color: $color-primary;
+				display: block;
+				padding: 1rem;
 
 				&:hover {
 					color: $color-secondary;

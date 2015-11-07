@@ -44,3 +44,7 @@ img {
   background-color: $color-tertiary;
 }
 
+:focus {
+	outline: $color-tertiary solid 0;
+}
+

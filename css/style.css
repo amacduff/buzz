@@ -104,6 +104,10 @@ img {
   background-color: #F1F8F7;
 }
 
+:focus {
+  outline: #F1F8F7 solid 0;
+}
+
 /* Headings */
 h1 {
   background-color: #4AB7DA;
@@ -151,11 +155,12 @@ nav.small {
 }
 nav.small ul li {
   border-bottom: 2px solid #F1F8F7;
-  padding: 1rem;
   text-align: center;
 }
 nav.small ul li a {
   color: #194B8D;
+  display: block;
+  padding: 1rem;
 }
 nav.small ul li a:hover {
   color: #4AB7DA;
@@ -448,18 +453,24 @@ main {
   width: 90%;
 }
 .filter h2 {
+  clear: both;
   color: #194B8D;
   font-size: 20px;
   font-size: 1.25rem;
 }
+.filter h2:last-child {
+  padding-top: 2rem;
+}
 .filter ul li {
   display: inline-block;
-  margin: 2rem 1.5rem 0 0;
+  margin-right: -0.3rem;
+  width: 33.3333%;
 }
 .filter ul li a {
   border: 2px solid #63BC5E;
   box-sizing: border-box;
   color: #63BC5E;
+  display: block;
   padding: 0.75rem;
 }
 .filter ul li a:hover, .filter ul li a.current {
@@ -467,6 +478,9 @@ main {
   color: #FFFFFF;
 }
 
+.styled-select {
+  margin-right: 2rem;
+}
 .styled-select select {
   background-color: #F1F8F7;
   border: 2px solid #63BC5E;
@@ -480,7 +494,9 @@ main {
 }
 
 .sort-by {
-  margin-top: 2rem;
+  clear: both;
+  max-width: 34.2rem;
+  padding-top: 2rem;
 }
 
 .display-results {
@@ -697,6 +713,10 @@ footer {
 
   .photo img {
     max-width: 14rem;
+  }
+
+  .styled-select {
+    float: left;
   }
 
   .enter .form-element {

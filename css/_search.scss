@@ -7,22 +7,30 @@
 	width: 90%;
 
 	h2 {
+		clear: both;
 		color: $color-primary;
 		font: {
 			@include fntz(1.25);
 		}
+
+		&:last-child {
+			padding-top: 2rem;
+		}
+
 	}
 
 	ul {
 
 		li {
 			display: inline-block;
-			margin: 2rem 1.5rem 0 0;
+			margin-right: -0.3rem;
+			width: 33.3333%;
 
 			a {
 				border: 2px solid $color-accent;
 				box-sizing: border-box;
 				color: $color-accent;
+				display: block;
 				padding: 0.75rem;
 
 				&:hover,
@@ -39,21 +47,28 @@
 
 }
 
-.styled-select select {
-	background-color: $color-tertiary;
-	border: 2px solid $color-accent;
-	color: $color-accent;
-	font: {
-		family: $font-text;
-		@include fntz(1.1);
+.styled-select {
+	margin-right: 2rem;
+
+	select {
+		background-color: $color-tertiary;
+		border: 2px solid $color-accent;
+		color: $color-accent;
+		font: {
+			family: $font-text;
+			@include fntz(1.1);
+		}
+		margin-top: 2rem;
+		padding: 1rem;
+		width: 10rem;
 	}
-	margin-top: 2rem;
-	padding: 1rem;
-	width: 10rem;
+
 }
 
 .sort-by {
-	margin-top: 2rem;
+	clear: both;
+	max-width: 34.2rem;
+	padding-top: 2rem;
 }
 
 .display-results {
