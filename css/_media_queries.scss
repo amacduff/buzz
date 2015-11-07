@@ -235,8 +235,13 @@
 		}
 	}
 
-	.writeup p {
+	.writeup .group {
 		@include grid(6);
+
+		&:last-child {
+			margin-top: 0;
+		}
+
 	}
 
 	.photo {

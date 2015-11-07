@@ -12,11 +12,6 @@
 		font: {
 			@include fntz(1.25);
 		}
-
-		&:last-child {
-			padding-top: 2rem;
-		}
-
 	}
 
 	ul {
@@ -45,6 +40,10 @@
 
 	}
 
+}
+
+.sort {
+	padding-top: 3rem;
 }
 
 .styled-select {

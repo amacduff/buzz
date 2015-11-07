@@ -5,8 +5,27 @@
 	overflow: hidden;
 	width: 90%;
 
+	h2 {
+		color: $color-primary;
+		font: {
+			@include fntz(1.25);
+		}
+		margin-bottom: 2rem;
+	}
+
 	p {
 		padding-bottom: 1rem;
+	}
+
+	.group:last-child {
+		margin-top: 2rem;
+	}
+
+	.source {
+		font: {
+			style: italic;
+			weight: 300;
+		}
 	}
 
 }
@@ -34,7 +53,7 @@
 	}
 
 	input {
-		border: 2px solid $color-highlight;
+		border: 2px solid $color-accent;
 		display: block;
 		font: {
 			family: $font-text;
@@ -69,7 +88,8 @@
 }
 
 .invisible {
-	display: none;
+	clear: both;
+	display: block;
 
 	&.message {
 		display: block;
