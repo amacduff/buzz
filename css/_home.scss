@@ -58,6 +58,10 @@ main {
 
 	}
 
+	&:hover {
+		background-color: lighten($color-accent2, 25%);
+	}
+
 }
 
 .view-all {

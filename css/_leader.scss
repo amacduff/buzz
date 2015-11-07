@@ -89,11 +89,15 @@
 
 .invisible {
 	clear: both;
-	display: block;
+	display: none;
 
 	&.message {
 		display: block;
 	}
 
+}
+
+.success {
+	padding: 3rem 0 2rem 0;
 }
 

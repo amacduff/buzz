@@ -329,6 +329,9 @@ main {
   font-size: 1.1rem;
   margin-left: 1rem;
 }
+.leader:hover {
+  background-color: #e5f8d4;
+}
 
 .view-all {
   clear: both;
@@ -453,10 +456,14 @@ main {
 
 .invisible {
   clear: both;
-  display: block;
+  display: none;
 }
 .invisible.message {
   display: block;
+}
+
+.success {
+  padding: 3rem 0 2rem 0;
 }
 
 /* Browse Leaders */
@@ -573,6 +580,15 @@ main {
   color: #194B8D;
   font-size: 24px;
   font-size: 1.5rem;
+}
+
+/* Stories Styles */
+.pagination {
+  margin: 5rem 0;
+}
+.pagination ul li {
+  display: inline;
+  padding-right: 2rem;
 }
 
 /* Footer */
@@ -782,15 +798,18 @@ footer {
     padding-left: 20%;
   }
 
-  .writeup .group {
+  .writeup .group,
+  .enter .invisible p {
     float: left;
     width: 49%;
     margin-right: 2%;
   }
-  .writeup .group:last-child {
+  .writeup .group:last-child,
+  .enter .invisible p:last-child {
     margin-right: 0;
   }
-  .writeup .group:last-child {
+  .writeup .group:last-child,
+  .enter .invisible p:last-child {
     margin-top: 0;
   }
 
@@ -860,6 +879,14 @@ footer {
   }
   .enter input {
     width: 100%;
+  }
+
+  .stories {
+    width: 60%;
+  }
+
+  .best-of-stories {
+    width: 40%;
   }
 }
 @media screen and (min-width: 1201px) {

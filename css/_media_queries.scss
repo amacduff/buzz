@@ -235,7 +235,8 @@
 		}
 	}
 
-	.writeup .group {
+	.writeup .group,
+	.enter .invisible p {
 		@include grid(6);
 
 		&:last-child {
@@ -324,6 +325,14 @@
 			width: 100%;
 		}
 
+	}
+
+	.stories {
+		width: 60%;
+	}
+
+	.best-of-stories {
+		width: 40%;
 	}
 
 }
