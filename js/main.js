@@ -1,3 +1,20 @@
+// Slide Toggle
+
+$('#nav-toggle').click(function(){
+  $('nav.small').slideToggle();
+});
+
+
+// Class Toggle
+
+$("button").click(function(e) {
+	e.preventDefault();
+  $(".invisible").toggleClass("message");
+});
+
+
+// Text Rotator
+
 (function ( $ ) {
  
     $.fn.textRotator = function(options) {

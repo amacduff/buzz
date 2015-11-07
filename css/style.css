@@ -208,6 +208,14 @@ nav.large ul li.selected {
   color: #4AB7DA;
 }
 
+.quote blockquote cite {
+  color: #4AB7DA;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
 .intro {
   margin: 0 auto 4rem auto;
   overflow: hidden;
@@ -418,10 +426,18 @@ main {
   line-height: 1.6em;
   margin-top: 2rem;
   padding: 0.5rem 2rem;
+  transition: all 0.2s ease-in-out;
 }
 .enter button:hover {
   background-color: #63BC5E;
   color: #FFFFFF;
+}
+
+.invisible {
+  display: none;
+}
+.invisible.message {
+  display: block;
 }
 
 /* Browse Leaders */
@@ -458,8 +474,13 @@ main {
   font-family: "Lato", sans-serif;
   font-size: 17.6px;
   font-size: 1.1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1rem;
+  width: 10rem;
+}
+
+.sort-by {
+  margin-top: 2rem;
 }
 
 .display-results {

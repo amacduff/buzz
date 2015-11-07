@@ -122,6 +122,24 @@ nav.large {
 
 }
 
+.quote {
+
+	blockquote {
+
+		cite {
+			color: $color-secondary;
+			font: {
+				family: $font-text;
+				@include fntz(1.5);
+			}
+			margin-top: 1rem;
+
+		}
+
+	}
+
+}
+
 .intro {
 	margin: 0 auto 4rem auto;
 	overflow: hidden;
