@@ -88,6 +88,10 @@ a:hover {
   color: #A2E567;
 }
 
+em {
+  font-style: italic;
+}
+
 cite {
   display: block;
 }
@@ -371,6 +375,7 @@ main {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .story-link p {
   margin-top: 0.5rem;
@@ -604,11 +609,17 @@ main {
   margin: 3rem 0;
   padding-bottom: 3rem;
 }
+.story h2 {
+  text-transform: capitalize;
+}
 .story .byline {
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1rem 0;
 }
 .story i {
   color: #4AB7DA;
+}
+.story .continue-reading {
+  white-space: nowrap;
 }
 .story .comments {
   color: #194B8D;
@@ -624,7 +635,9 @@ main {
 .best-of-links ul li {
   font-size: 24px;
   font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 2rem;
+  text-transform: capitalize;
 }
 
 .pagination {

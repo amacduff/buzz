@@ -27,12 +27,20 @@
 	margin: 3rem 0;
 	padding-bottom: 3rem;
 
+	h2 {
+		text-transform: capitalize;
+	}
+
 	.byline {
-		margin-bottom: 1rem;
+		margin: 0.5rem 0 1rem 0;
 	}
 
 	i {
 		color: $color-secondary;
+	}
+
+	.continue-reading {
+		white-space: nowrap;
 	}
 
 	.comments {
@@ -55,8 +63,10 @@
 		li {
 			font: {
 				@include fntz(1.5);
+				weight: 700;
 			}
 			margin-bottom: 2rem;
+			text-transform: capitalize;
 		}
 
 	}
