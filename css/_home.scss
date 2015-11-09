@@ -36,7 +36,7 @@ main {
 
 		.title,
 		.date {
-			display: inline;
+			display: block;
 		}
 
 		.title {
@@ -53,7 +53,6 @@ main {
 			font: {
 				@include fntz(1.1);
 			}
-			margin-left: 0.5rem;
 		}
 
 	}

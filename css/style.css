@@ -318,7 +318,7 @@ main {
 }
 .leader .info .title,
 .leader .info .date {
-  display: inline;
+  display: block;
 }
 .leader .info .title {
   font-size: 17.6px;
@@ -331,7 +331,6 @@ main {
 .leader .info .date {
   font-size: 17.6px;
   font-size: 1.1rem;
-  margin-left: 0.5rem;
 }
 .leader:hover {
   background-color: #e5f8d4;
@@ -574,7 +573,7 @@ main {
 
 .photo-sq {
   float: left;
-  width: 4rem;
+  width: 5.5rem;
 }
 
 .icon {
