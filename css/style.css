@@ -304,6 +304,7 @@ main {
   margin-right: 2%;
   margin: 1rem auto;
   overflow: hidden;
+  position: relative;
 }
 .leader:last-child {
   margin-right: 0;
@@ -336,6 +337,11 @@ main {
 .leader .info .date {
   font-size: 17.6px;
   font-size: 1.1rem;
+}
+.leader .info .i-industry {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 .leader:hover {
   background-color: #e5f8d4;
@@ -544,6 +550,7 @@ main {
   margin-right: 2%;
   margin: 1rem auto;
   overflow: hidden;
+  position: relative;
 }
 .result:last-child {
   margin-right: 0;
@@ -574,6 +581,11 @@ main {
   font-size: 17.6px;
   font-size: 1.1rem;
   margin-left: 1rem;
+}
+.result .info .i-industry {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 
 .photo-sq {
@@ -625,6 +637,9 @@ main {
 .story .continue-reading {
   white-space: nowrap;
 }
+.story .i-comment {
+  vertical-align: top;
+}
 .story .comments {
   color: #194B8D;
   font-weight: 300;
@@ -663,6 +678,10 @@ footer {
 .footer-content {
   margin: 0 auto;
   width: 90%;
+}
+.footer-content img {
+  padding: 0 0.25rem 0 0.75rem;
+  vertical-align: top;
 }
 
 /* Media Queries */

@@ -16,6 +16,7 @@ main {
 	@include grid(12);
 	margin: 1rem auto;
 	overflow: hidden;
+	position: relative;
 
 	.info {
 		float: left;
@@ -53,6 +54,12 @@ main {
 			font: {
 				@include fntz(1.1);
 			}
+		}
+
+		.i-industry {
+			position: absolute;
+			bottom: 0.5rem;
+			right: 0.5rem;
 		}
 
 	}

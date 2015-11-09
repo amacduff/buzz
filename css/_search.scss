@@ -82,6 +82,7 @@
 	@include grid(12);
 	margin: 1rem auto;
 	overflow: hidden;
+	position: relative;
 
 	.info {
 		float: left;
@@ -115,6 +116,12 @@
 				@include fntz(1.1);
 			}
 			margin-left: 1rem;
+		}
+
+		.i-industry {
+			position: absolute;
+			bottom: 0.5rem;
+			right: 0.5rem;
 		}
 
 	}
