@@ -331,7 +331,7 @@ main {
 .leader .info .date {
   font-size: 17.6px;
   font-size: 1.1rem;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .leader:hover {
   background-color: #e5f8d4;
