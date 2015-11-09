@@ -65,7 +65,7 @@ table {
 /* Global Styles */
 body {
   background-color: #F1F8F7;
-  border-top: 5px solid #194B8D;
+  border-top: 6px solid #194B8D;
   color: #222222;
   font-family: "Lato", sans-serif;
   font-size: 17.6px;
@@ -149,7 +149,7 @@ h1 {
 /* Navigation */
 .nav-link {
   float: right;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 
 nav.small {
@@ -179,12 +179,12 @@ nav.large {
   float: right;
 }
 nav.large ul li {
-  border-top: 5px solid #F1F8F7;
+  border-top: 6px solid #F1F8F7;
   display: inline-block;
-  padding: 1rem 1rem 1.35rem 0;
+  padding: 1.25rem 1rem 1.35rem 0;
 }
 nav.large ul li.selected {
-  border-top: 5px solid #4AB7DA;
+  border-top: 6px solid #4AB7DA;
 }
 
 /* Home Header */
