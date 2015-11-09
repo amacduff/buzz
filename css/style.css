@@ -126,6 +126,10 @@ h1 {
 }
 
 /* Header */
+header {
+  background: url(../img/clouds.png) top center no-repeat;
+}
+
 .topbar {
   margin: 0 auto;
   overflow: hidden;
